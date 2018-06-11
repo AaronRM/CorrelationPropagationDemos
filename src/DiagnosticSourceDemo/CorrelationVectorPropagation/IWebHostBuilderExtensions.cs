@@ -14,7 +14,7 @@ namespace CorrelationVectorPropagation
         {
             webHostBuilder.ConfigureServices(services =>
             {
-                // Required for automatic cV propogation
+                // Required for automatic cV propagation
                 services.AddHttpContextAccessor();
                 services.AddSingleton<IStartupFilter, CorrelationVectorStartupFilter>();
                 services.AddSingleton<CorrelationVectorDiagnosticListenerObserver>();
